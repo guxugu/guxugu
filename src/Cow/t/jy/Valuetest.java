@@ -6,20 +6,7 @@ public class Valuetest {
 		{
 			int str1 = 10;
 			int str2 = 5;
-			int ttt;
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			int ttt;	
 			ttt=str1+str2;
 			System.out.println(ttt);
 			

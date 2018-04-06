@@ -9,7 +9,7 @@ public class home5 {
 		float Tal;
 		float Wit;
 		float G1;
-		float G2;
+		float G2;	
 		
 		JOptionPane.showMessageDialog(null, "키와 몸무게를 입력하시오");
 		Tal = Float.parseFloat(JOptionPane.showInputDialog("키(소숫점까지)"));
@@ -22,6 +22,12 @@ public class home5 {
 		G1=(Tal/100)*(Tal/100)*22;
 		G2=Wit/G1*100;
 		System.out.println("당신의 비만도(%)는"+G2+"입니다");
+		if(G2 >=130){System.out.println("과비만입니다");}
+		else if (G2 >=120){System.out.println("중비만입니다");}
+		else if (G2 >=110){System.out.println("중비만입니다");}
+		else if (G2 >=100){System.out.println("과체중입니다");}
+		else if (G2 >=90){System.out.println("정상입니다");}
+
 		
 		// TODO Auto-generated method stub
 

@@ -12,10 +12,4 @@ public class l6q4 {
 			  System.out.println();		  
 		 		}	 
 		 }
-	
-		
-		// TODO Auto-generated method stub
-
 	}
-
-

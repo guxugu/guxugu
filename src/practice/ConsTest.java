@@ -10,23 +10,29 @@ public class ConsTest {
 		System.out.println("아반테 기본사양");
 	}
 	public ConsTest(int a, int b){
-		this();
 		aa=a;
 		bb=b;
 		System.out.println("아반테 중옵");
 	}
 	public static void main(String[] args) {
+		
+		int t = 0;
+		int p = 0;
+		ConsTest obj;
+		
 		try{
-		int t = Integer.parseInt(JOptionPane.showInputDialog("외형 옵션 번호"));
-		int p = Integer.parseInt(JOptionPane.showInputDialog("내부 옵션 번호"));
+			 t = Integer.parseInt(JOptionPane.showInputDialog("외형 옵션 번호"));
+			 p = Integer.parseInt(JOptionPane.showInputDialog("내부 옵션 번호"));
 		}
 		catch(Exception e){
-		int	t = null;
-		int	p = null;
+			t = -1;// string 은 ""
+			p = -1;
+		}
 		
-		ConsTest obj =new ConsTest(t,p);
-		System.out.println(obj.aa);
-		System.out.println(obj.bb);
+		if(t > 0 && p>0){
+		  obj =new ConsTest(t,p);
+		}else{
+			obj =new ConsTest();
 		}
 	}
 
